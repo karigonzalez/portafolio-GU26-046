@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeiny Gonzalez | Portafolio de Atención al Cliente, Catálogos & Mejora Continua (GU26-046)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    ::selection { background-color: #B541FA; color: #FFFFFF; }
+    .backdrop-blur-sm { backdrop-filter: blur(8px); }
+    .glow-violet:hover { box-shadow: 0 0 20px rgba(181, 65, 250, 0.35); }
+    .glow-cyan:hover { box-shadow: 0 0 20px rgba(79, 210, 233, 0.35); }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 bg-[#192584]/95 backdrop-blur-sm text-white border-b border-[#4FD2E9]/30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+      <a href="#hero" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-[#B541FA] text-white flex items-center justify-center font-extrabold text-lg shadow-md group-hover:scale-105 transition-transform">
+          YG
+        </div>
+        <div>
+          <h1 class="font-bold text-base md:text-lg tracking-wide leading-tight">Yeiny Gonzalez C.</h1>
+          <p class="text-xs text-[#4FD2E9] font-medium">Atención al Cliente & Catálogos</p>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#metricas" class="hover:text-[#4FD2E9] transition">Métricas</a>
+        <a href="#soluciones" class="hover:text-[#4FD2E9] transition">Casos & FAQ</a>
+        <a href="#simulador" class="hover:text-[#4FD2E9] transition">Simulador Live</a>
+        <a href="#experiencia" class="hover:text-[#4FD2E9] transition">Trayectoria</a>
+        <a href="#contacto" class="bg-[#B541FA] hover:bg-[#a128eb] text-white px-5 py-2 rounded-xl font-bold transition shadow-md glow-violet">Contactar</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button onclick="toggleMobileMenu()" class="md:hidden text-slate-200 hover:text-white p-1">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#192584] border-t border-[#4FD2E9]/20 px-4 py-4 space-y-3 text-sm">
+      <a href="#metricas" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#4FD2E9]">Métricas</a>
+      <a href="#soluciones" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#4FD2E9]">Casos & FAQ</a>
+      <a href="#simulador" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#4FD2E9]">Simulador Live</a>
+      <a href="#experiencia" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#4FD2E9]">Trayectoria</a>
+      <a href="#contacto" onclick="toggleMobileMenu()" class="block text-[#4FD2E9] font-bold">Contactar Directamente</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="bg-gradient-to-b from-[#192584] via-[#151e6b] to-[#101752] text-white py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      
+      <!-- Availability Badge -->
+      <div class="inline-flex items-center space-x-2 bg-white/10 border border-[#4FD2E9]/40 px-4 py-1.5 rounded-full text-xs font-semibold text-[#4FD2E9] mb-6 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-[#4FD2E9] animate-pulse"></span>
+        <span>Disponible para Trabajo Remoto · Código de Vacante: GU26-046</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+        Especialista en <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4FD2E9] via-white to-[#B541FA]">Atención al Cliente</span>, <br class="hidden sm:inline"/>
+        Explicación de Catálogos y Mejora Continua
+      </h2>
+
+      <p class="text-slate-300 max-w-3xl mx-auto text-base sm:text-lg mb-8 leading-relaxed font-normal">
+        Aporto más de 10 años de experiencia transformando consultas complejas en respuestas claras. Experta en resolución de solicitudes por Freshdesk/correo, escucha activa, estructuración de manuales FAQ y optimización continua de procesos posventa.
+      </p>
+
+      <!-- Key Tools Badges -->
+      <div class="flex flex-wrap justify-center gap-2.5 text-xs font-semibold mb-10">
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-lg text-slate-200">Freshdesk & Zendesk</span>
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-lg text-slate-200">Correo Profesional & Gmail</span>
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-lg text-slate-200">Google Sheets / Excel</span>
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-lg text-slate-200">Manuales FAQ & Conocimiento</span>
+        <span class="bg-[#B541FA]/20 border border-[#B541FA]/50 px-3.5 py-1.5 rounded-lg text-[#4FD2E9]">Escucha Activa</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#simulador" class="bg-[#B541FA] hover:bg-[#a128eb] text-white px-7 py-3.5 rounded-xl font-bold transition shadow-lg flex items-center justify-center space-x-2 glow-violet">
+          <i data-lucide="play-circle" class="w-5 h-5"></i>
+          <span>Probar Simulador Freshdesk Live</span>
+        </a>
+        <a href="#soluciones" class="bg-transparent border border-[#4FD2E9]/60 hover:bg-white/10 text-white px-6 py-3.5 rounded-xl font-semibold transition flex items-center justify-center space-x-2">
+          <i data-lucide="file-text" class="w-5 h-5 text-[#4FD2E9]"></i>
+          <span>Ver Manual de FAQ & Casos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICAS DESTACADAS -->
+  <section id="metricas" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-[#192584]">Métricas de Impacto Operativo</h3>
+      <p class="text-[#74706D] text-sm mt-2 font-medium">Resultados medibles alcanzados en soporte por ticket, adopción de servicios y calidad</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Metric Card 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition glow-violet">
+        <div class="w-12 h-12 bg-[#B541FA]/10 rounded-xl flex items-center justify-center text-[#B541FA] mb-4">
+          <i data-lucide="smile" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">+85% / &gt;90%</div>
+        <div class="text-xs font-bold text-[#B541FA] uppercase tracking-wider mb-2">CSAT Registrado</div>
+        <p class="text-xs text-[#74706D] leading-relaxed">Nivel de satisfacción al cliente sostenido en Educaria y Atento mediante comunicación clara e informada.</p>
+      </div>
+
+      <!-- Metric Card 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#4FD2E9] transition glow-cyan">
+        <div class="w-12 h-12 bg-[#4FD2E9]/20 rounded-xl flex items-center justify-center text-[#192584] mb-4">
+          <i data-lucide="clock" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">85%</div>
+        <div class="text-xs font-bold text-[#192584] uppercase tracking-wider mb-2">Cumplimiento de SLA</div>
+        <p class="text-xs text-[#74706D] leading-relaxed">Cumplimiento de tiempos de primera respuesta e incubación de tickets usando Freshdesk, Jira y Zendesk.</p>
+      </div>
+
+      <!-- Metric Card 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition glow-violet">
+        <div class="w-12 h-12 bg-[#B541FA]/10 rounded-xl flex items-center justify-center text-[#B541FA] mb-4">
+          <i data-lucide="check-circle" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">80 - 85%</div>
+        <div class="text-xs font-bold text-[#B541FA] uppercase tracking-wider mb-2">Resolución FCR</div>
+        <p class="text-xs text-[#74706D] leading-relaxed">Resolución al primer contacto mediante escucha activa y dominio completo del catálogo de servicios.</p>
+      </div>
+
+      <!-- Metric Card 4 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#4FD2E9] transition glow-cyan">
+        <div class="w-12 h-12 bg-[#4FD2E9]/20 rounded-xl flex items-center justify-center text-[#192584] mb-4">
+          <i data-lucide="trending-up" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">+60%</div>
+        <div class="text-xs font-bold text-[#192584] uppercase tracking-wider mb-2">Adopción de Servicios</div>
+        <p class="text-xs text-[#74706D] leading-relaxed">Incremento en el uso de funcionalidades clave mediante capacitaciones y manuales explicativos.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASOS DE ESTUDIO Y SOLUCIONES -->
+  <section id="soluciones" class="py-16 bg-slate-100 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="bg-[#B541FA]/10 text-[#B541FA] text-xs font-bold px-3 py-1 rounded-full border border-[#B541FA]/30">Casos de Éxito Operativo</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#192584] mt-3">Soluciones Reales a Desafíos de Atención y Catálogos</h3>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Caso 1: GU26-046 Explicación de Catálogos y FAQ -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-[#B541FA] transition">
+          <div class="p-6 sm:p-8">
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs text-[#74706D] font-mono">Freshdesk / Correo / FAQ</span>
+            </div>
+            
+            <h4 class="text-xl font-bold text-[#192584] mb-3">Caso 1: Explicación de Catálogos y Reducción de Consultas Recurrentes</h4>
+            
+            <div class="space-y-3 text-xs sm:text-sm text-[#74706D]">
+              <div class="p-3.5 bg-red-50 border border-red-100 rounded-xl text-red-900">
+                <strong>Desafío / Problema:</strong> Consultas repetitivas por correo sobre el catálogo de servicios, confusión de usuarios sobre alcances y saturación de tickets sin categorizar.
+              </div>
+              <div class="p-3.5 bg-blue-50 border border-blue-100 rounded-xl text-[#192584]">
+                <strong>Solución Implementada:</strong> Estructuración de un Manual de Preguntas Frecuentes (FAQ) en Google Sheets y Freshdesk, con respuestas estandarizadas escritas con tono claro y empático.
+              </div>
+              <div class="p-3.5 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-950 font-medium">
+                <strong>Resultado:</strong> Disminución del 35% en tiempo de primera respuesta, FCR del 85% e incremento del 60% en adopción de servicios por parte de los clientes.
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-4 border-t border-slate-200 flex justify-between items-center">
+            <span class="text-xs text-[#74706D]">Herramientas: Freshdesk, Google Sheets, Gmail</span>
+            <button onclick="openModal('modal-caso1')" class="text-xs font-bold text-[#B541FA] hover:underline flex items-center space-x-1">
+              <span>Ver Estructura de FAQ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Caso 2: GU26-020/045 Triaje y Posventa -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-[#4FD2E9] transition">
+          <div class="p-6 sm:p-8">
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs text-[#74706D] font-mono">Zendesk / CRM / Posventa</span>
+            </div>
+            
+            <h4 class="text-xl font-bold text-[#192584] mb-3">Caso 2: Triaje Eficiente por Correo y Gestión de Posventa / Garantías</h4>
+            
+            <div class="space-y-3 text-xs sm:text-sm text-[#74706D]">
+              <div class="p-3.5 bg-red-50 border border-red-100 rounded-xl text-red-900">
+                <strong>Desafío / Problema:</strong> Bandeja de entrada desorganizada, reprocesos en la validación de garantías y falta de seguimiento a objeciones complejas de usuarios.
+              </div>
+              <div class="p-3.5 bg-purple-50 border border-purple-100 rounded-xl text-purple-950">
+                <strong>Solución Implementada:</strong> Matriz de clasificación por prioridades en CRM/Zendesk, protocolo de escucha activa para desacelerar objeciones y encuestas de satisfacción.
+              </div>
+              <div class="p-3.5 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-950 font-medium">
+                <strong>Resultado:</strong> Cumplimiento del 85% en acuerdos de SLA, retención de clientes del 70% y CSAT superior a 88%.
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-4 border-t border-slate-200 flex justify-between items-center">
+            <span class="text-xs text-[#74706D]">Herramientas: Zendesk, Salesforce CRM, Excel</span>
+            <button onclick="openModal('modal-caso2')" class="text-xs font-bold text-[#192584] hover:underline flex items-center space-x-1">
+              <span>Ver Plantilla de Respuesta</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR LIVE FRESHDESK / CORREO -->
+  <section id="simulador" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <span class="bg-[#B541FA]/10 text-[#B541FA] text-xs font-bold px-3.5 py-1 rounded-full border border-[#B541FA]/30">Demo Interactiva</span>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-[#192584] mt-3">Simulador Live de Clasificación y Explicación de Servicios</h3>
+      <p class="text-[#74706D] text-sm mt-1 font-medium">Prueba cómo clasifico, aplico escucha activa y respondo consultas de catálogo en tiempo real</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+      <!-- Console Header -->
+      <div class="bg-[#192584] text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <div class="w-3 h-3 rounded-full bg-red-400"></div>
+          <div class="w-3 h-3 rounded-full bg-[#4FD2E9]"></div>
+          <div class="w-3 h-3 rounded-full bg-[#B541FA]"></div>
+          <span class="text-xs text-slate-300 ml-2 font-mono">Freshdesk_Mail_Console_GU26-046.v1</span>
+        </div>
+        <span class="text-xs bg-white/10 px-2.5 py-1 rounded text-[#4FD2E9] font-mono">Entorno de Pruebas Live</span>
+      </div>
+
+      <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Left: Case Selector & Message Body -->
+        <div>
+          <label class="block text-xs font-bold text-[#192584] uppercase mb-2">1. Seleccionar Consulta Entrante:</label>
+          <select id="ticket-select" onchange="updateSimulator(this.value)" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm text-slate-800 focus:ring-2 focus:ring-[#B541FA] focus:outline-none mb-4 font-medium">
+            <option value="1">Consulta sobre Catálogo de Servicios (Código GU26-046)</option>
+            <option value="2">Solicitud por Correo / Estado de Requerimiento (GU26-020)</option>
+            <option value="3">Reclamo de Posventa / Garantía (GU26-045)</option>
+          </select>
+
+          <label class="block text-xs font-bold text-[#192584] uppercase mb-2">Mensaje del Usuario:</label>
+          <div id="ticket-body" class="bg-slate-50 p-4 rounded-xl text-xs sm:text-sm text-slate-700 italic border border-slate-200 min-h-[110px] leading-relaxed">
+            Cargando mensaje...
+          </div>
+
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <div>
+              <span class="block text-[10px] font-bold uppercase text-[#74706D]">Categorización Sugerida</span>
+              <span id="ticket-cat" class="text-xs font-bold text-[#192584] block mt-0.5">Explicación de Catálogo</span>
+            </div>
+            <div>
+              <span class="block text-[10px] font-bold uppercase text-[#74706D]">SLA Recomendado</span>
+              <span id="ticket-sla" class="text-xs font-bold text-[#B541FA] block mt-0.5">&lt; 2 Horas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Auto-generated Response & Copy Action -->
+        <div class="flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="block text-xs font-bold text-[#192584] uppercase">2. Respuesta Profesional Auto-Generada:</label>
+              <span class="text-[10px] bg-[#B541FA]/10 text-[#B541FA] font-bold px-2 py-0.5 rounded">Plantilla FAQ Aplicada</span>
+            </div>
+            <textarea id="response-template" readonly class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3.5 text-xs sm:text-sm text-slate-800 font-mono h-48 focus:outline-none resize-none leading-relaxed"></textarea>
+          </div>
+
+          <div class="mt-4 flex space-x-2">
+            <button onclick="copyResponse()" class="flex-1 bg-[#192584] hover:bg-[#121c63] text-white py-2.5 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2 shadow-sm">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+              <span id="copy-btn-text">Copiar Respuesta</span>
+            </button>
+            <button onclick="simularEnvio()" class="bg-[#B541FA] hover:bg-[#a128eb] text-white py-2.5 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2 shadow-sm">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Simular Envío</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA Y FORMACION -->
+  <section id="experiencia" class="py-16 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#192584]">Trayectoria Profesional y Formación</h3>
+        <p class="text-[#74706D] text-sm mt-1 font-medium">Más de 10 años de experiencia acumulada en soporte, operaciones B2B y tecnología</p>
+      </div>
+
+      <div class="relative border-l-2 border-[#B541FA]/40 ml-4 md:ml-32 space-y-8">
+        
+        <!-- Item 1: ETB -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#B541FA] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">Mayo 2026 - Actualidad</span>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">Mayo 2026 - Actualidad</span>
+            <h4 class="font-bold text-[#192584] text-base">Analista - Empresas, Mayoristas y Gobierno</h4>
+            <p class="text-xs text-[#74706D] font-medium">ETB (Empresa de Telecomunicaciones de Bogotá)</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Explicación del catálogo de servicios B2B, atención de PQR por canales escritos, verificación documental de garantías y seguimiento en Salesforce y SAP.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Educaria -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#192584] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">2017 - 2026</span>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">2017 - 2026</span>
+            <h4 class="font-bold text-[#192584] text-base">Líder de Soporte al Cliente y Capacitación de Plataforma</h4>
+            <p class="text-xs text-[#74706D] font-medium">Educaria Perú</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Atención de requerimientos en Freshdesk, Jira y Zendesk (CSAT &gt; 85%). Capacitación de usuarios en el catálogo de funcionalidades de Alexia SIS (+60% adopción).</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Atento -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#B541FA] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">2008 - 2014</span>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">2008 - 2014</span>
+            <h4 class="font-bold text-[#192584] text-base">Asesora de Atención al Cliente y Soporte por Correo</h4>
+            <p class="text-xs text-[#74706D] font-medium">Atento Perú / Colombia</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Resolución de consultas guiando a usuarios en servicios, logrando FCR del 80-85% y niveles de satisfacción superiores al 90%.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education Cards -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        <div class="bg-white p-4 rounded-xl border border-slate-200">
+          <span class="text-[10px] font-bold text-[#B541FA] uppercase">Bootcamp Frontend Developer</span>
+          <h5 class="font-bold text-[#192584] text-sm mt-0.5">Laboratoria</h5>
+          <p class="text-[11px] text-[#74706D]">Desarrollo Web, UX & Ágil</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200">
+          <span class="text-[10px] font-bold text-[#192584] uppercase">Técnico Profesional</span>
+          <h5 class="font-bold text-[#192584] text-sm mt-0.5">SENA</h5>
+          <p class="text-[11px] text-[#74706D]">Mercadeo y Ventas</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200">
+          <span class="text-[10px] font-bold text-[#B541FA] uppercase">Diseño Gráfico</span>
+          <h5 class="font-bold text-[#192584] text-sm mt-0.5">CETPRO Rosa de América</h5>
+          <p class="text-[11px] text-[#74706D]">Piezas Visuales & Manuales</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCION DE CONTACTO -->
+  <section id="contacto" class="py-16 bg-[#192584] text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="bg-[#4FD2E9]/20 text-[#4FD2E9] text-xs font-bold px-3.5 py-1 rounded-full border border-[#4FD2E9]/40">Contacto Directo</span>
+      <h3 class="text-2xl sm:text-3xl font-bold mt-3 mb-3">¿Conversamos sobre la vacante GU26-046?</h3>
+      <p class="text-slate-300 text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
+        Estoy disponible para entrevistas, evaluaciones de redacción o simulaciones de atención al cliente posventa y explicación de catálogos.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+        <a href="https://wa.me/51964310280?text=Hola%20Yeiny,%20vi%20tu%20portafolio%20para%20la%20vacante%20GU26-046%20y%20me%20gustaría%20conversar." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-7 py-3.5 rounded-xl font-bold transition flex items-center justify-center space-x-2 shadow-md">
+          <i data-lucide="message-square" class="w-5 h-5"></i>
+          <span>Enviar WhatsApp (+51 964 310 280)</span>
+        </a>
+        <a href="mailto:ykgonzalez01@gmail.com?subject=Postulación%20GU26-046%20-%20Yeiny%20Gonzalez" class="w-full sm:w-auto bg-[#B541FA] hover:bg-[#a128eb] text-white px-7 py-3.5 rounded-xl font-bold transition flex items-center justify-center space-x-2 shadow-md glow-violet">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          <span>ykgonzalez01@gmail.com</span>
+        </a>
+      </div>
+
+      <p class="text-xs text-[#4FD2E9]">Lima, Perú · Disponible para modalidad Remota Internacional</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#101752] text-slate-400 text-xs py-6 text-center border-t border-[#4FD2E9]/20">
+    <p>© 2026 Yeiny Karine Gonzalez Cifuentes · Portafolio Profesional de Atención al Cliente & Catálogos.</p>
+  </footer>
+
+  <!-- MODAL CASO 1: ESTRUCTURA DE FAQ -->
+  <div id="modal-caso1" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 text-slate-800 relative border-t-4 border-[#B541FA] shadow-2xl">
+      <button onclick="closeModal('modal-caso1')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <span class="text-xs font-bold text-[#B541FA] bg-[#B541FA]/10 px-2.5 py-0.5 rounded">Vacante GU26-046</span>
+      <h4 class="text-lg font-bold text-[#192584] mt-1 mb-2">Estructura del Manual de FAQ y Explicación de Servicios</h4>
+      <p class="text-xs text-[#74706D] mb-4">Esquema estandarizado utilizado para la categorización en Freshdesk y Google Sheets:</p>
+      
+      <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-3 text-xs text-slate-700">
+        <div>
+          <strong class="text-[#192584] block font-bold">1. Categoría Principal:</strong>
+          <span>Alcance del Catálogo de Servicios y Especificaciones de Plan.</span>
+        </div>
+        <div>
+          <strong class="text-[#192584] block font-bold">2. Pregunta Frecuente Tipo:</strong>
+          <span>"¿Qué incluye exactamente el módulo contratado y cuál es el procedimiento de ampliación?"</span>
+        </div>
+        <div>
+          <strong class="text-[#192584] block font-bold">3. Plantilla de Respuesta Estandarizada:</strong>
+          <p class="italic text-slate-600 mt-1 bg-white p-2.5 border rounded">
+            "Estimado/a [Nombre], con gusto le explico el alcance de su servicio: incluye [Característica A, B y C]. En caso de requerir una ampliación, el proceso toma menos de 24 horas acreditando [Documento X]. Le adjunto la guía en PDF."
+          </p>
+        </div>
+      </div>
+      <button onclick="closeModal('modal-caso1')" class="mt-4 w-full bg-[#192584] text-white py-2.5 rounded-xl text-xs font-bold hover:bg-[#121c63] transition">Cerrar Ventana</button>
+    </div>
+  </div>
+
+  <!-- MODAL CASO 2: PLANTILLA TRIAJE Y POSVENTA -->
+  <div id="modal-caso2" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 text-slate-800 relative border-t-4 border-[#4FD2E9] shadow-2xl">
+      <button onclick="closeModal('modal-caso2')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <span class="text-xs font-bold text-[#192584] bg-[#4FD2E9]/20 px-2.5 py-0.5 rounded">Vacante GU26-020 / GU26-045</span>
+      <h4 class="text-lg font-bold text-[#192584] mt-1 mb-2">Plantilla de Respuesta Tipo para Triaje por Correo</h4>
+      <p class="text-xs text-[#74706D] mb-4">Ejemplo de comunicación con empatía y estricto seguimiento de SLA:</p>
+      
+      <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl font-mono text-xs text-slate-700 space-y-2">
+        <p><strong>Asunto:</strong> Re: [Ticket #94012] Estado de su requerimiento</p>
+        <p>Estimado/a [Nombre del Cliente],</p>
+        <p>Gracias por comunicarse con nosotros. He recibido su solicitud respecto a [Detalle del caso].</p>
+        <p>Le confirmo que el caso ha sido clasificado con prioridad ALTA y registrado en nuestro sistema bajo el código #[Número_Ticket]. Se encuentra asignado al área especializada para su resolución.</p>
+        <p>Le mantendré informado/a sobre cada avance en un plazo no mayor a 2 horas.</p>
+        <p>Atentamente,<br><strong>Yeiny Gonzalez C.</strong><br>Atención al Cliente & Operaciones</p>
+      </div>
+      <button onclick="closeModal('modal-caso2')" class="mt-4 w-full bg-[#192584] text-white py-2.5 rounded-xl text-xs font-bold hover:bg-[#121c63] transition">Cerrar Ventana</button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      updateSimulator("1");
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+
+    // Simulator Scenarios Data
+    const simScenarios = {
+      "1": {
+        body: '"Hola, quisiéramos consultar qué servicios incluye exactamente el catálogo contratado y cómo podemos solicitar una actualización del sistema sin afectar nuestras operaciones diarias."',
+        cat: "Explicación de Catálogo (GU26-046)",
+        sla: "< 2 Horas",
+        response: `Estimado/a cliente,
+
+Gracias por comunicarse con nuestro equipo de atención.
+
+Con gusto le detallo los alcances del servicio contratado:
+1. Acceso completo a los módulos operativos principales.
+2. Capacitación continua de funcionalidades para su personal.
+3. Soporte técnico vía Freshdesk/Correo de lunes a viernes.
+
+Para solicitar la actualización de su sistema sin interrupciones, hemos preparado una guía paso a paso basada en nuestro manual de FAQ que le adjunto en este mensaje.
+
+Quedo atenta para acompañarle durante el proceso.
+
+Atentamente,
+Yeiny Gonzalez C. | Atención al Cliente & Catálogos`
+      },
+      "2": {
+        body: '"Buenas tardes, envié una solicitud de cambio de dirección para la instalación de mi servicio hace 2 días por correo y aún no recibo confirmación. ¿Podrían indicarme el estado del trámite?"',
+        cat: "Atención por Correo (GU26-020)",
+        sla: "< 4 Horas",
+        response: `Estimado/a cliente,
+
+Gracias por escribirnos. Comprendo la importancia de contar con la confirmación de su traslado de sede.
+
+He verificado su expediente en nuestro sistema y le confirmo que la documentación enviada fue validada con éxito. El caso se encuentra asignado a programación técnica (Ticket #TR-8821).
+
+En el transcurso del día de hoy recibirá la confirmación con la fecha y hora exacta de la instalación.
+
+Atentamente,
+Yeiny Gonzalez C. | Atención de Requerimientos`
+      },
+      "3": {
+        body: '"Requiero aplicar la garantía de mi equipo de comunicaciones ya que presentó una falla tras el mantenimiento de ayer. Necesito sustitución inmediata o solución hoy."',
+        cat: "Garantías & Posventa (GU26-045)",
+        sla: "< 1 Hora",
+        response: `Estimado/a cliente,
+
+Lamento los inconvenientes ocasionados por la falla reportada. Comprendo perfectamente la urgencia de contar con su equipo operativo.
+
+Le confirmo que he registrado su solicitud bajo el protocolo de garantía prioritaria (Código GU26-045). He derivado el caso con el área técnica para coordinar la evaluación y el reemplazo del equipo hoy mismo.
+
+Le estaré informando en menos de 1 hora los detalles de la visita técnica.
+
+Atentamente,
+Yeiny Gonzalez C. | Especialista de Posventa`
+      }
+    };
+
+    // Update Simulator Content
+    function updateSimulator(key) {
+      const data = simScenarios[key];
+      if (!data) return;
+
+      document.getElementById("ticket-body").textContent = data.body;
+      document.getElementById("ticket-cat").textContent = data.cat;
+      document.getElementById("ticket-sla").textContent = data.sla;
+      document.getElementById("response-template").value = data.response;
+    }
+
+    // Copy Response Function
+    function copyResponse() {
+      const copyText = document.getElementById("response-template").value;
+      navigator.clipboard.writeText(copyText).then(() => {
+        const btnText = document.getElementById("copy-btn-text");
+        btnText.textContent = "¡Copiado!";
+        setTimeout(() => {
+          btnText.textContent = "Copiar Respuesta";
+        }, 2000);
+      });
+    }
+
+    // Simulate Send Action
+    function simularEnvio() {
+      alert("✅ Respuesta enviada exitosamente mediante Freshdesk/Correo. SLA registrado e indicador de CSAT habilitado.");
+    }
+
+    // Modal Control Functions
+    function openModal(id) {
+      document.getElementById(id).classList.remove("hidden");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
